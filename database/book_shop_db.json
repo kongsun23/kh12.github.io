@@ -1,0 +1,96 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"book_shop_db"},
+{"type":"table","name":"cart","database":"book_shop_db","data":
+[
+{"id":"4","client_id":"1","inventory_id":"1","price":"2500","quantity":"0","date_created":"2021-07-16 13:48:00"}
+]
+}
+,{"type":"table","name":"categories","database":"book_shop_db","data":
+[
+{"id":"1","category":"Laptop","description":"&lt;p style=&quot;margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ultrices tortor. Sed at ligula non lectus tempor bibendum a nec ante. Maecenas iaculis vitae nisi eu dictum. Duis sit amet enim arcu. Etiam blandit vulputate magna, non lobortis velit pharetra vel. Morbi sollicitudin lorem sed augue suscipit, eu commodo tortor vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eleifend interdum est, at gravida erat molestie in. Vestibulum et consectetur dui, ac luctus arcu. Curabitur et viverra elit. Cras ac eleifend ipsum, ac suscipit leo. Vivamus porttitor ac risus eu ultricies. Morbi malesuada mi vel luctus sagittis. Ut vestibulum porttitor est, id rutrum libero. Mauris at lacus vehicula, aliquam purus quis, pharetra lorem.&lt;\/p&gt;&lt;p style=&quot;margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px;&quot;&gt;Proin consectetur massa ut quam molestie porta. Donec sit amet ligula odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi ex sapien, pulvinar ac arcu at, luctus scelerisque nibh. In dolor velit, pellentesque eu blandit a, mollis ac neque. Fusce tortor lectus, aliquam et eleifend id, aliquet ut libero. Nunc scelerisque vulputate turpis quis volutpat. Vivamus malesuada sem in dapibus aliquam. Vestibulum imperdiet, nulla vitae pharetra pretium, magna felis placerat libero, quis tincidunt felis diam nec nisi. Sed scelerisque ullamcorper cursus. Suspendisse posuere, velit nec rhoncus cursus, urna sapien consectetur est, et lacinia odio leo nec massa. Nam vitae nunc vitae tortor vestibulum consequat ac quis risus. Sed finibus pharetra orci, id vehicula tellus eleifend sit amet.&lt;\/p&gt;&lt;p style=&quot;margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px;&quot;&gt;Morbi id ante vel velit mollis egestas. Suspendisse pretium sem urna, vitae placerat turpis cursus faucibus. Ut dignissim molestie blandit. Phasellus pulvinar, eros id ultricies mollis, lectus velit viverra mi, at venenatis velit purus id nisi. Duis eu massa lorem. Curabitur sed nibh felis. Donec faucibus, nulla at faucibus blandit, mi justo efficitur dui, non mattis nisl purus non lacus. Maecenas vel congue tellus, in convallis nisi. Curabitur faucibus interdum massa, eu facilisis ligula pretium quis. Nunc eleifend orci nec volutpat tincidunt.&lt;\/p&gt;","status":"1","date_created":"2021-07-16 09:08:44"},
+{"id":"2","category":"Desktop","description":"&lt;p&gt;Sample 102&lt;\/p&gt;","status":"1","date_created":"2021-07-16 09:09:25"},
+{"id":"3","category":"Novels","description":"&lt;p&gt;Sample 103&lt;\/p&gt;","status":"0","date_created":"2021-07-16 09:09:46"},
+{"id":"4","category":"Sample Category","description":"&lt;p&gt;Sample Category 104&lt;\/p&gt;","status":"0","date_created":"2021-07-16 11:33:52"}
+]
+}
+,{"type":"table","name":"clients","database":"book_shop_db","data":
+[
+{"id":"1","firstname":"John","lastname":"Smith","gender":"Male","contact":"091023456789","email":"jsmith@sample.com","password":"1254737c076cf867dc53d60a0364f38e","default_delivery_address":"Sample Address","date_created":"2021-07-16 10:34:48"},
+{"id":"2","firstname":"un","lastname":"kongsun","gender":"Male","contact":"0966389066","email":"sun@gmail.com","password":"6035d7a170ff97458068c79e64310a38","default_delivery_address":"pp","date_created":"2024-12-24 09:54:02"}
+]
+}
+,{"type":"table","name":"inventory","database":"book_shop_db","data":
+[
+{"id":"1","product_id":"1","quantity":"50","price":"2500","date_created":"2021-07-16 10:02:39","date_updated":null},
+{"id":"2","product_id":"2","quantity":"20","price":"3500","date_created":"2021-07-16 10:09:08","date_updated":null},
+{"id":"3","product_id":"3","quantity":"10","price":"2500","date_created":"2021-07-16 12:05:54","date_updated":null},
+{"id":"4","product_id":"4","quantity":"50","price":"1999.99","date_created":"2021-07-16 13:12:10","date_updated":null},
+{"id":"5","product_id":"5","quantity":"5","price":"500","date_created":"2024-12-26 11:59:11","date_updated":null},
+{"id":"6","product_id":"6","quantity":"3","price":"220","date_created":"2024-12-26 11:59:49","date_updated":null}
+]
+}
+,{"type":"table","name":"orders","database":"book_shop_db","data":
+[
+{"id":"1","client_id":"1","delivery_address":"Sample Address","payment_method":"Online Payment","order_type":"2","amount":"8500","status":"0","paid":"1","date_created":"2021-07-16 11:14:58","date_updated":null},
+{"id":"4","client_id":"1","delivery_address":"Sample Address","payment_method":"Online Payment","order_type":"2","amount":"5000","status":"5","paid":"1","date_created":"2021-07-16 13:13:42","date_updated":"2021-07-16 13:52:56"}
+]
+}
+,{"type":"table","name":"order_list","database":"book_shop_db","data":
+[
+{"id":"1","order_id":"1","product_id":"2","quantity":"1","price":"3500","total":"3500"},
+{"id":"2","order_id":"1","product_id":"1","quantity":"2","price":"2500","total":"5000"},
+{"id":"3","order_id":"4","product_id":"3","quantity":"2","price":"2500","total":"5000"}
+]
+}
+,{"type":"table","name":"products","database":"book_shop_db","data":
+[
+{"id":"1","category_id":"1","sub_category_id":"1","title":"Acer Aspire 7","author":"acer","description":"&lt;p&gt;&lt;span style=\\\\\\&quot;text-align: justify;\\\\\\&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ultrices tortor. Sed at ligula non lectus tempor bibendum a nec ante. Maecenas iaculis vitae nisi eu dictum. Duis sit amet enim arcu. Etiam blandit vulputate magna, non lobortis velit pharetra vel. Morbi sollicitudin lorem sed augue suscipit, eu commodo tortor vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eleifend interdum est, at gravida erat molestie in. Vestibulum et consectetur dui, ac luctus arcu. Curabitur et viverra elit. Cras ac eleifend ipsum, ac suscipit leo. Vivamus porttitor ac risus eu ultricies. Morbi malesuada mi vel luctus sagittis. Ut vestibulum porttitor est, id rutrum libero. Mauris at lacus vehicula, aliquam purus quis, pharetra lorem.&lt;\/span&gt;&lt;br&gt;&lt;\/p&gt;","status":"1","date_created":"2021-07-16 09:43:11"},
+{"id":"2","category_id":"1","sub_category_id":"1","title":"Acer Aspire 5","author":"acer","description":"&lt;p&gt;&lt;span style=\\\\\\\\\\\\\\&quot;text-align: justify;\\\\\\\\\\\\\\&quot;&gt;Proin consectetur massa ut quam molestie porta. Donec sit amet ligula odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi ex sapien, pulvinar ac arcu at, luctus scelerisque nibh. In dolor velit, pellentesque eu blandit a, mollis ac neque. Fusce tortor lectus, aliquam et eleifend id, aliquet ut libero. Nunc scelerisque vulputate turpis quis volutpat. Vivamus malesuada sem in dapibus aliquam. Vestibulum imperdiet, nulla vitae pharetra pretium, magna felis placerat libero, quis tincidunt felis diam nec nisi. Sed scelerisque ullamcorper cursus. Suspendisse posuere, velit nec rhoncus cursus, urna sapien consectetur est, et lacinia odio leo nec massa. Nam vitae nunc vitae tortor vestibulum consequat ac quis risus. Sed finibus pharetra orci, id vehicula tellus eleifend sit amet.&lt;\/span&gt;&lt;br&gt;&lt;\/p&gt;","status":"1","date_created":"2021-07-16 10:08:53"},
+{"id":"3","category_id":"1","sub_category_id":"2","title":"ASUS Vivobook 16X OLED","author":"asus","description":"&lt;p&gt;&lt;span style=\\&quot;text-align: justify;\\&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ultrices tortor. Sed at ligula non lectus tempor bibendum a nec ante. Maecenas iaculis vitae nisi eu dictum. Duis sit amet enim arcu. Etiam blandit vulputate magna, non lobortis velit pharetra vel. Morbi sollicitudin lorem sed augue suscipit, eu commodo tortor vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eleifend interdum est, at gravida erat molestie in. Vestibulum et consectetur dui, ac luctus arcu. Curabitur et viverra elit. Cras ac eleifend ipsum, ac suscipit leo. Vivamus porttitor ac risus eu ultricies. Morbi malesuada mi vel luctus sagittis. Ut vestibulum porttitor est, id rutrum libero. Mauris at lacus vehicula, aliquam purus quis, pharetra lorem.&lt;\/span&gt;&lt;br&gt;&lt;\/p&gt;","status":"1","date_created":"2021-07-16 12:03:08"},
+{"id":"4","category_id":"1","sub_category_id":"2","title":"Zenbook 15","author":"asus","description":"&lt;p style=\\&quot;margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px;\\&quot;&gt;Ut et urna sapien. Nulla lacinia sagittis felis id cursus. Etiam eget lacus quis enim aliquet dignissim. Nulla vel elit ultrices, venenatis quam sed, rutrum magna. Pellentesque ultricies non lorem hendrerit vestibulum. Maecenas lacinia pharetra nisi, at pharetra nunc placerat nec. Maecenas luctus dolor in leo malesuada, vel aliquet metus sollicitudin. Curabitur sed pellentesque sem, in tincidunt mi. Aliquam sodales aliquam felis, eget tristique felis dictum at. Proin leo nisi, malesuada vel ex eu, dictum pellentesque mauris. Quisque sit amet varius augue.&lt;\/p&gt;&lt;p style=\\&quot;margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px;\\&quot;&gt;Sed quis imperdiet est. Donec lobortis tortor id neque tempus, vel faucibus lorem mollis. Fusce ut sollicitudin risus. Aliquam iaculis tristique nunc vel feugiat. Sed quis nulla non dui ornare porttitor eu vitae nisi. Curabitur at quam ut libero convallis mattis vel eget mauris. Vivamus vitae lectus ligula. Nulla facilisi. Vivamus tristique maximus nulla, vel mollis felis blandit posuere. Curabitur mi risus, rutrum non magna at, molestie gravida magna. Aenean neque sapien, volutpat a ullamcorper nec, iaculis quis est.&lt;\/p&gt;","status":"1","date_created":"2021-07-16 13:11:17"},
+{"id":"5","category_id":"1","sub_category_id":"8","title":"Dell Inspiron 3000","author":"dell","description":"","status":"1","date_created":"2024-12-26 00:20:15"},
+{"id":"6","category_id":"1","sub_category_id":"8","title":"Dell Latitude 3520","author":"dell","description":"","status":"1","date_created":"2024-12-26 00:20:49"},
+{"id":"7","category_id":"2","sub_category_id":"3","title":"Dell OptiPlex 300","author":"dell","description":"","status":"1","date_created":"2024-12-26 12:30:50"},
+{"id":"8","category_id":"2","sub_category_id":"3","title":"Dell OptiPlex 3070","author":"dell","description":"","status":"1","date_created":"2024-12-26 12:31:14"},
+{"id":"9","category_id":"2","sub_category_id":"4","title":"Clone1","author":"clone","description":"","status":"1","date_created":"2024-12-26 12:31:55"},
+{"id":"10","category_id":"2","sub_category_id":"4","title":"clone2","author":"clone","description":"","status":"1","date_created":"2024-12-26 12:32:13"},
+{"id":"11","category_id":"2","sub_category_id":"4","title":"Clone3","author":"clone","description":"","status":"1","date_created":"2024-12-26 12:33:11"},
+{"id":"12","category_id":"2","sub_category_id":"3","title":"Dell Vostro 3910","author":"dell","description":"","status":"1","date_created":"2024-12-26 12:34:05"}
+]
+}
+,{"type":"table","name":"sales","database":"book_shop_db","data":
+[
+{"id":"1","order_id":"3","total_amount":"8500","date_created":"2021-07-16 11:18:12"},
+{"id":"2","order_id":"4","total_amount":"5000","date_created":"2021-07-16 13:13:42"}
+]
+}
+,{"type":"table","name":"sub_categories","database":"book_shop_db","data":
+[
+{"id":"1","parent_id":"1","sub_category":"ACER","description":"&lt;p&gt;Sample Sub Category&lt;\/p&gt;","status":"1","date_created":"2021-07-16 09:10:44"},
+{"id":"2","parent_id":"1","sub_category":"ASUS","description":"&lt;p&gt;Sample Sub 102&lt;\/p&gt;","status":"1","date_created":"2021-07-16 09:11:05"},
+{"id":"3","parent_id":"2","sub_category":"Desktop_DELL","description":"&lt;p&gt;Sample Sub 103&lt;\/p&gt;","status":"1","date_created":"2021-07-16 09:11:36"},
+{"id":"4","parent_id":"2","sub_category":"Desktop_Clone","description":"&lt;p&gt;Sample 104&lt;\/p&gt;","status":"1","date_created":"2021-07-16 09:12:51"},
+{"id":"5","parent_id":"3","sub_category":"Fantasy","description":"&lt;p&gt;Sample Sub 105&lt;\/p&gt;","status":"1","date_created":"2021-07-16 09:13:28"},
+{"id":"6","parent_id":"3","sub_category":"Action and Adventure","description":"&lt;p&gt;Sample Sub 106&lt;\/p&gt;","status":"1","date_created":"2021-07-16 09:13:49"},
+{"id":"7","parent_id":"4","sub_category":"Sub Cat 101","description":"&lt;p&gt;Sample Sub 107&lt;\/p&gt;","status":"1","date_created":"2021-07-16 11:34:22"},
+{"id":"8","parent_id":"1","sub_category":"DELL","description":"","status":"1","date_created":"2024-12-26 00:04:48"}
+]
+}
+,{"type":"table","name":"system_info","database":"book_shop_db","data":
+[
+{"id":"1","meta_field":"name","meta_value":"Kh12"},
+{"id":"6","meta_field":"short_name","meta_value":"KH12"},
+{"id":"11","meta_field":"logo","meta_value":"uploads\/1735144920_1626397500_book_logo.jpg"},
+{"id":"13","meta_field":"user_avatar","meta_value":"uploads\/user_avatar.jpg"},
+{"id":"14","meta_field":"cover","meta_value":"uploads\/1735145700_1626397620_books.jpg"}
+]
+}
+,{"type":"table","name":"users","database":"book_shop_db","data":
+[
+{"id":"1","firstname":"Adminstrator","lastname":"Admin","username":"admin","password":"0192023a7bbd73250516f069df18b500","avatar":"uploads\/1624240500_avatar.png","last_login":null,"type":"1","date_added":"2021-01-20 14:02:37","date_updated":"2021-06-21 09:55:07"},
+{"id":"4","firstname":"John","lastname":"Smith","username":"jsmith","password":"1254737c076cf867dc53d60a0364f38e","avatar":null,"last_login":null,"type":"0","date_added":"2021-06-19 08:36:09","date_updated":"2021-06-19 10:53:12"},
+{"id":"5","firstname":"Claire","lastname":"Blake","username":"cblake","password":"4744ddea876b11dcb1d169fadf494418","avatar":null,"last_login":null,"type":"0","date_added":"2021-06-19 10:01:51","date_updated":"2021-06-19 12:03:23"}
+]
+}
+]
